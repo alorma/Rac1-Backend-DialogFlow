@@ -36,7 +36,7 @@ var buildLiveContextAnswer = function (answer) {
           items: [
             {
               simpleResponse: {
-                textToSpeech: "this is a simple response"
+                textToSpeech: program.title
               }
             },
             {
@@ -45,10 +45,15 @@ var buildLiveContextAnswer = function (answer) {
                 subtitle: program.subtitle,
                 formattedText: program.description,
                 image: {
-                  url: program.images.program,
+                  url: program.images.share,
                   accessibilityText: program.title
               },
               }
+            }
+          ],
+          suggestions: [
+            {
+              title: 'reproduir'
             }
           ]
         }
